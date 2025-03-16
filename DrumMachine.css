@@ -1,0 +1,165 @@
+:root {
+  --darkGreen: #067f09;
+  --lightGreen: #51e511;
+  --yellowGreen: #d0f122;
+  --darkestGreen: #054610;
+  --blackGreen: #154109;
+  --neonGreen: #3bf809;
+  background-color: var(--darkGreen);
+}
+
+#drum-machine{
+  background-color: var(--lightGreen);
+  height: 280px;
+  width: 550px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: 6px solid var(--yellowGreen)
+}
+
+#header{
+  display: flex;
+  justify-content: flex-end
+    
+}
+
+#inner-header{
+  padding-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  padding-right: 5px;
+}
+
+i{
+  padding-top: 15px;
+  float: right;
+  padding-right: 4px;
+}
+
+#drumAndDisplayContainer{
+  display: flex; 
+}
+
+#drums{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 256px;
+  height: 230px;
+  padding-left: 20px;
+}
+
+.drum-pad{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70px;
+  width: 80px;
+  background-color: var(--darkGreen);
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  box-shadow: var(--darkestGreen) 3px 3px 5px;
+}
+
+.drum-pad:hover{
+  cursor: pointer
+}
+
+.highlight{
+  background-color: var(--yellowGreen);
+  box-shadow: none;
+}
+
+#controlsContainer{
+  width: 250px;
+}
+
+#power{
+  font-weight: bold;
+  color: white;
+  padding-left: 120px;
+  height: 5px;
+}
+
+#powerContainer, #bankContainer{
+  background-color: var(--blackGreen);
+  width: 48px;
+  height: 22px;
+  margin-left: 118px;
+}
+
+#powerButton, #bankButton{
+  background-color: var(--yellowGreen);
+  width: 18px;
+  height: 17px;
+  margin-top: 2px;
+  border: 2.5px solid var(--blackGreen)
+}
+
+#powerButton:hover, #bankButton:hover{
+  cursor: pointer
+}
+
+.on{
+  margin-left: 25px;
+}
+
+#display{
+  display: inline-block;
+  background-color: var(--darkGreen);
+  width: 180px;
+  height: 45px;
+  margin-left: 50px;
+  margin-top: 10px;
+  color: white;
+}
+
+#displayName{
+  text-align: center;
+  font-weight: bold;
+}
+
+#volumeSlider{
+  margin-left: 35px
+}
+
+input[type="range"]{
+  -webkit-appearance: none;
+  background: var(--blackGreen);
+  margin-top: 15px;
+  width: 210px;
+  height: 3px;
+  border: 1px solid black;
+  box-shadow: black 3px 3px 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 25px;
+  width: 9px;
+  background: var(--yellowGreen);
+  box-shadow: black 1px 1px 2px;
+}
+input[type="range"]:hover{
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover{
+  cursor: pointer;
+}
+
+#bank{
+  font-weight: bold;
+  color: white;
+  padding-left: 123px;
+  height: 5px;
+}
+
+
+.smoothPianoKit{
+  margin-left: 25px;
+}
